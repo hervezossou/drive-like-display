@@ -18,8 +18,8 @@ export const DisplayContainer = ({
 
   // Styles pour le conteneur principal
   const containerClasses = layout === "grid" 
-    ? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-    : "flex flex-col gap-2";
+    ? "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 transition-all duration-300 ease-in-out"
+    : "flex flex-col gap-2 transition-all duration-300 ease-in-out";
 
   return (
     <div>
