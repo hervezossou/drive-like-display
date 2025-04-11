@@ -26,7 +26,4 @@ Un composant React inspiré de Google Drive pour afficher des éléments en mode
 ```bash
 git clone https://github.com/votre-utilisateur/drive-like-display.git
 cd drive-like-display
-
-2. Installer les dépendances
-```bash
-pnpm install
+pnpm run dev
