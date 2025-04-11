@@ -1,54 +1,32 @@
-# React + TypeScript + Vite
+# Drive-like Display Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18.2.0-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-blue)
+![Vite](https://img.shields.io/badge/Vite-4.4.0-orange)
 
-Currently, two official plugins are available:
+Un composant React inspiré de Google Drive pour afficher des éléments en mode grille ou liste, avec une transition fluide entre les deux vues.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Fonctionnalités
 
-## Expanding the ESLint configuration
+- **Basculer entre les vues grille et liste**
+- Design responsive adapté à tous les écrans
+- Animations fluides lors des transitions
+- Style personnalisable
+- Typage TypeScript complet
+- Intégration facile dans n'importe quel projet React
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Prérequis
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Node.js (v18+ recommandé)
+- npm ou yarn
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Cloner le dépôt :
+```bash
+git clone https://github.com/votre-utilisateur/drive-like-display.git
+cd drive-like-display
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+2. Installer les dépendances
+```bash
+pnpm install
