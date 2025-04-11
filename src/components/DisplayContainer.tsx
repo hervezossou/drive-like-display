@@ -22,7 +22,7 @@ export const DisplayContainer = ({
     : "flex flex-col gap-2 transition-all duration-300 ease-in-out";
 
   return (
-    <div>
+    <div className="py-4">
       <div className="flex justify-end mb-4 gap-2">
         <button 
           onClick={() => setLayout("grid")} 

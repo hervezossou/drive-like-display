@@ -33,7 +33,7 @@ const FilesPage = () => {
   return (
     <div className="container mx-auto p-8">
       <h1 className="text-2xl font-bold mb-1">Mes fichiers</h1>
-      {/*<DisplayContainer items={files} defaultLayout="grid" />*/}
+      <DisplayContainer items={files} defaultLayout="grid" />
       
       {/* Alternative avec children personnalisé */}
       <DisplayContainer items={files} defaultLayout="list">
